@@ -107,28 +107,6 @@ BuildRequires: python-keyring python-futures
 Requires: cortx-motr
 Requires: cortx-py-utils
 %endif
-Requires: libxml2
-Requires: libyaml
-#Supported openssl versions -- CentOS 7 its 1.0.2k, RHEL8 its 1.1.1
-Requires: openssl
-Requires: yaml-cpp
-Requires: gflags
-Requires: glog
-Requires: pkgconfig
-Requires: log4cxx_cortx log4cxx_cortx-devel
-# Required by S3 background delete based on python
-Requires: python36
-Requires: python36-ldap
-Requires: python%{py_short_ver}-yaml
-Requires: python%{py_short_ver}-pika
-%if 0%{?el7}
-Requires: python-keyring python-futures
-%endif
-
-# Java used by Auth server
-Requires: java-1.8.0-openjdk-headless
-Requires: PyYAML
-Requires: hiredis
 
 %description
 S3 server provides S3 REST API interface support for Motr object storage.
