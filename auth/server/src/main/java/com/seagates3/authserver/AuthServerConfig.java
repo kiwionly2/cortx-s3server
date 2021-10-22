@@ -458,5 +458,9 @@ public class AuthServerConfig {
     static String getRsyslogMsgId() {
       return authServerConfig.getProperty("RsyslogMsgId");
     }
+   public
+    static String getAuthStore() {
+      return authServerConfig.getProperty("authStore");
+    }
 }
 
