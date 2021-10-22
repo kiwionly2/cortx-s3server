@@ -100,6 +100,9 @@ usage() {
 # validate and configure lnet
 sh ${S3_SRC_DIR}/scripts/env/common/configure_lnet.sh
 
+# install all third party rpms
+yum -y install $(cat ${S3_SRC_DIR}/scripts/env/common/third-party-rpms.txt)
+
 if [[ $# -eq 0 ]] ; then
   source ${S3_SRC_DIR}/scripts/env/common/setup-yum-repos.sh
   #install pre-requisites on dev vm

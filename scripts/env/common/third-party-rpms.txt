@@ -1,0 +1,16 @@
+libxml2
+libyaml
+openssl
+yaml-cpp
+gflags
+glog
+pkgconfig
+log4cxx_cortx
+log4cxx_cortx-devel
+python36
+python36-ldap
+python36-yaml
+python36-pika
+java-1.8.0-openjdk-headless
+PyYAML
+hiredis
