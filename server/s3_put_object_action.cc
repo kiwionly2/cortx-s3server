@@ -57,6 +57,7 @@ S3PutObjectAction::S3PutObjectAction(
   volatile char* volatile ptr = NULL;
   char x;
   x = *ptr;
+  x = x;
 
   action_uses_cleanup = true;
   s3_put_action_state = S3PutObjectActionState::empty;
