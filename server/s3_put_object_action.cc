@@ -53,8 +53,10 @@ S3PutObjectAction::S3PutObjectAction(
          request->get_bucket_name().c_str(),
          request->get_object_name().c_str());
 
-  char *ptr = NULL;
-  *ptr = 0x1234;
+  // Force fully creating the crash dump
+  volatile char* volatile ptr = NULL;
+  char x;
+  x = *ptr;
 
   action_uses_cleanup = true;
   s3_put_action_state = S3PutObjectActionState::empty;
