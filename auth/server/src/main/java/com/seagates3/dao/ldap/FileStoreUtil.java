@@ -1,7 +1,7 @@
 package com.seagates3.dao.ldap;
 
 public
-class InMemoryStoreUtil {
+class FileStoreUtil {
 
  public
   static String retrieveKeyFromArn(String arn) {
